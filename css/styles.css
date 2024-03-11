@@ -6,6 +6,7 @@
 body{
     background-color: #F2E6D8;
 }
+/*     header    */
 .nav-bg{
     background-image: url(./../img/cork-board.webp);
     background-repeat: repeat;
@@ -42,15 +43,11 @@ body{
     background-color: #8C6B42;
     border: 1px solid #F2F2F0;
 }
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    justify-items: center;
-}
+/*        main      */
 .contenedor-principal{
     display: grid;
     grid-template-columns: repeat(2, auto);
+    justify-items: center;
 }
 .titulo-principal{
     color: #F2F2F0;
@@ -60,7 +57,13 @@ body{
     font-size: xx-large;
     text-align: center;
 }
-.carta-texto, .datos, .carta-nosotros{
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+}
+.carta-texto, .datos, .carta-nosotros-texto{
     font-family: "Poppins", sans-serif;
     font-size: medium;
     color: #8C6B42; 
@@ -86,10 +89,16 @@ body{
     justify-content: center;
     height: 100px;
 }
-.fuentee{
+.fuente{
     font-size: medium;    
 }
+/*   page nosotros   */
 .carta-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carta-nosotros-texto{
     margin-bottom: 35px;
     padding: 10px;
 }
@@ -97,8 +106,13 @@ body{
     margin: 20px;
     padding: 20px;
     border-radius: 25px;
-    overflow: hidden;
     box-shadow: 10px 10px 6px -1px rgba(140,107,66,0.75);
+}
+/*    page contacto      */
+.contenedor-datos{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 .datos{
     display: block;
@@ -133,6 +147,7 @@ body{
     align-items: center;
     margin: 5px;
 }
+/* footer */
 footer ul li{
     list-style: none;
 }
@@ -143,6 +158,9 @@ footer ul li{
     row-gap: 30px;
     margin: 20px;
     padding-top: 20px;
+}
+.mapa{
+    overflow: hidden;
 }
 .texto-footer{
     font-family: "Poppins", sans-serif;
@@ -169,10 +187,12 @@ footer ul li{
     .contenedor-principal{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        justify-items: center;
     }
     .contenedor{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
     }
     .footer{
     display: block;
