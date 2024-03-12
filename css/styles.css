@@ -152,25 +152,23 @@ footer ul li{
     list-style: none;
 }
 .footer{
-    display: flex;
-    flex-direction: row;
-    align-items: last baseline;
-    row-gap: 30px;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
     padding-top: 20px;
+    margin: 20px;
 }
 .mapa{
     overflow: hidden;
+    height: 250px;
+    width: 400px;
 }
-.texto-footer{
+.texto-footer, .redes-texto{
     font-family: "Poppins", sans-serif;
-    font-size: small;
+    font-size: medium;
     color: #8C6B42;
-    margin: 10px;
-}
-.redes{
-    position: relative;
-    left: 200px;
 }
 
 /*Media query para tablet*/
@@ -190,16 +188,25 @@ footer ul li{
         justify-items: center;
     }
     .contenedor{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
     }
     .footer{
-    display: block;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "mapa texto-footer"
+        "redes redes";
+    }
+    .mapa{
+        grid-area: mapa;
+    }
+    .texto-footer{
+        grid-area: texto-footer;
     }
     .redes{
-        position: relative;
-        left: 0;
+        grid-area: redes;
     }
 }
 
@@ -208,9 +215,19 @@ footer ul li{
     .contenedor-principal{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
     }
     .contenedor{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "mapa"
+        "texto-footer"
+        "redes";
     }
 }
