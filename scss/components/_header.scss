@@ -1,0 +1,37 @@
+header {
+    .nav-bg {
+        background-image: url(./../img/cork-board.webp);
+        background-repeat: repeat;
+        width: 100%;
+        div {
+            .menu-button:focus {
+                box-shadow: none;
+                .menu-icon {
+                    background-image: url(./../img/menu-hamburguesa.svg);
+                }
+            }
+            .menu {
+                flex-grow: 0;
+                .barra-ul {
+                    list-style: none;
+                    display: flex;
+                    column-gap: 5px;
+                    li a {
+                        color: #F2F2F0;
+                        text-decoration-line: none;
+                        font-family: "Poppins", sans-serif;
+                        font-size: x-large;
+                        font-weight: bolder;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        background-color: #8C6B42;
+                        border: 1px solid #F2F2F0;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

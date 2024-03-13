@@ -1,36 +1,31 @@
+/* Reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
+} */
+/* body{
     background-color: #F2E6D8;
-}
+} */
 /*     header    */
 .nav-bg{
     background-image: url(./../img/cork-board.webp);
     background-repeat: repeat;
     width: 100%;
-}
-.baner{
-    width: 100%;
-}
-.menu{
-    flex-grow: 0;
-}
+} 
+.menu-button:focus{
+    box-shadow: none;
+}  
 .menu-icon{
     background-image: url(./../img/menu-hamburguesa.svg);
 }
-.menu-button:focus{
-    box-shadow: none;
+.menu{
+    flex-grow: 0; 
 }
 .barra-ul{
     list-style: none;
     display: flex;
     column-gap: 5px;
-}
-.barra-ul li a:hover{
-    background-color: transparent;
 }
 .barra-ul li a {
     color: #F2F2F0;
@@ -43,12 +38,13 @@ body{
     background-color: #8C6B42;
     border: 1px solid #F2F2F0;
 }
-/*        main      */
-.contenedor-principal{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-items: center;
+.barra-ul li a:hover{
+    background-color: transparent;
 }
+/* main index */
+.baner{
+    width: 100%;
+} 
 .titulo-principal{
     color: #F2F2F0;
     background-color: #8C6B42;
@@ -57,16 +53,10 @@ body{
     font-size: xx-large;
     text-align: center;
 }
-.contenedor{
+.contenedor-principal{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
     justify-items: center;
-}
-.carta-texto, .datos, .carta-nosotros-texto{
-    font-family: "Poppins", sans-serif;
-    font-size: medium;
-    color: #8C6B42; 
 }
 .carta{
     width: 300px;
@@ -89,8 +79,19 @@ body{
     justify-content: center;
     height: 100px;
 }
+.carta-texto, .datos, .carta-nosotros-texto{
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    color: #8C6B42; 
+}
 .fuente{
     font-size: medium;    
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
 }
 /*   page nosotros   */
 .carta-nosotros{
@@ -98,15 +99,15 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.carta-nosotros-texto{
-    margin-bottom: 35px;
-    padding: 10px;
-}
 .carta-nosotros-foto{
     margin: 20px;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 10px 10px 6px -1px rgba(140,107,66,0.75);
+}
+.carta-nosotros-texto{
+    margin-bottom: 35px;
+    padding: 10px;
 }
 /*    page contacto      */
 .contenedor-datos{
@@ -148,9 +149,7 @@ body{
     margin: 5px;
 }
 /* footer */
-footer ul li{
-    list-style: none;
-}
+
 .footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -164,6 +163,9 @@ footer ul li{
     overflow: hidden;
     height: 250px;
     width: 400px;
+}
+.texto-footer ul li{
+    list-style: none;
 }
 .texto-footer, .redes-texto{
     font-family: "Poppins", sans-serif;

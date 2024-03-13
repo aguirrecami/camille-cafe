@@ -1,0 +1,30 @@
+// footer
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 20px;
+    .mapa{
+        overflow: hidden;
+        height: 250px;
+        width: 400px;
+    }
+    .texto-footer{
+        font-family: "Poppins", sans-serif;
+        font-size: medium;
+        color: #8C6B42;
+        ul li{
+            list-style: none;
+        }
+    }
+    .redes{
+        .redes-texto{
+            font-family: "Poppins", sans-serif;
+            font-size: medium;
+            color: #8C6B42;
+        }
+    }
+}
