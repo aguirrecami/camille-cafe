@@ -1,10 +1,10 @@
 // Estilos globales
 body{
-    background-color: #F2E6D8;
+    background-color: $color-primario;
 }
 .titulo-principal{
-    color: #F2F2F0;
-    background-color: #8C6B42;
+    color: $color-terciario;
+    background-color: $color-secundario;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-size: xx-large;

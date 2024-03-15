@@ -7,7 +7,7 @@
         .datos{
             display: block;
             width: 500px;
-            height: 300px;
+            height: nth($list: $medidas, $n: 3);
             border: 1px solid #8C6B42;
             border-radius: 25px;
             box-shadow: 10px 10px 6px -1px rgba(140,107,66,0.75);
@@ -15,7 +15,7 @@
             padding: 20px;
             font-family: "Poppins", sans-serif;
             font-size: medium;
-            color: #8C6B42;
+            color: $color-secundario;
             .datos-1{
                 display: flex;
                 justify-content: space-between;

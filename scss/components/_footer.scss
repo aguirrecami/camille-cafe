@@ -15,7 +15,7 @@
     .texto-footer{
         font-family: "Poppins", sans-serif;
         font-size: medium;
-        color: #8C6B42;
+        color: $color-secundario;
         ul li{
             list-style: none;
         }
@@ -24,7 +24,7 @@
         .redes-texto{
             font-family: "Poppins", sans-serif;
             font-size: medium;
-            color: #8C6B42;
+            color: $color-secundario;
         }
     }
 }

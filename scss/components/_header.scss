@@ -1,3 +1,4 @@
+// header
 header {
     .nav-bg {
         background-image: url(./../img/cork-board.webp);
@@ -17,14 +18,14 @@ header {
                     display: flex;
                     column-gap: 5px;
                     li a {
-                        color: #F2F2F0;
+                        color: $color-terciario;
                         text-decoration-line: none;
                         font-family: "Poppins", sans-serif;
                         font-size: x-large;
                         font-weight: bolder;
                         padding-left: 20px;
                         padding-right: 20px;
-                        background-color: #8C6B42;
+                        background-color: $color-secundario;
                         border: 1px solid #F2F2F0;
                         &:hover {
                             background-color: transparent;

@@ -6,8 +6,8 @@
         grid-template-rows: repeat(2, auto);
         justify-items: center;
         .carta {
-            width: 300px;
-            height: 300px;
+            width: nth($list: $medidas, $n: 3);
+            height: nth($list: $medidas, $n: 3);
             border-radius: 25px;
             overflow: hidden;
             box-shadow: 10px 10px 6px -1px rgba(140, 107, 66, 0.75);
@@ -15,19 +15,20 @@
             margin: 15px;
             img {
                 width: 100%;
-                height: 200px;
+                height: nth($list: $medidas, $n: 2);
             }
         }
         .carta-texto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            @include flex (column, center, center);
             text-align: center;
-            justify-content: center;
-            height: 100px;
+            height: nth($list: $medidas, $n: 1);
             font-family: "Poppins", sans-serif;
             font-size: medium;
-            color: #8C6B42;
+            color: $color-secundario;
             .fuente {
                 font-size: medium;
             }

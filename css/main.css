@@ -1,11 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: expected ";".
+ *    ,
+ * 22 |                 img{
+ *    |                    ^
+ *    '
+ *   scss\pages\_main-index.scss 22:20  @import
+ *   scss\main.scss 10:9                root stylesheet */
 
-body {
-  background-color: #F2E6D8;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 22 \2502                  img{\d\a    \2502                     ^\a    \2575 \a   scss\\pages\\_main-index.scss 22:20  @import\a   scss\\main.scss 10:9                root stylesheet';
 }
-
-/*# sourceMappingURL=main.css.map */

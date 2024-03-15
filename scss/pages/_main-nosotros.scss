@@ -1,9 +1,10 @@
 // main nosotros
 .main-nosotros{
     .carta-nosotros{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        @include flex (column,center, normal);
         .carta-nosotros-foto{
             margin: 20px;
             padding: 20px;
@@ -16,7 +17,7 @@
                 padding: 10px;
                 font-family: "Poppins", sans-serif;
                 font-size: medium;
-                color: #8C6B42; 
+                color: $color-secundario; 
             }
         }
     }

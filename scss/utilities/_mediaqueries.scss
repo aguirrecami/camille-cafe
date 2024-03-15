@@ -1,0 +1,81 @@
+// media queries
+// media query para tablet 
+@media screen and (max-width: 1024px){
+    header{
+        .nav-bg{
+            div{
+                .menu{
+                    .barra-ul{
+                        align-items: center;
+                        background-color: $color-secundario;
+                        border: 1px solid #F2F2F0;
+                        li a{
+                            border: none;
+                            background-color: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-index{
+        section{
+            .contenedor-principal{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                justify-items: center;
+            }
+        }
+    }
+    .main-bebidas, .main-postres{
+        .contenedor{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+        }
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "mapa texto-footer"
+        "redes redes";
+    }
+    .mapa{
+        grid-area: mapa;
+    }
+    .texto-footer{
+        grid-area: texto-footer;
+    }
+    .redes{
+        grid-area: redes;
+    }
+}
+
+// Media queries para mobile
+@media screen and (max-width: 768px){
+    .main-index{
+        section{
+            .contenedor-principal{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+            }
+        }
+    }
+    .main-bebidas, .main-postres{
+        .contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            justify-items: center;
+        }
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "mapa"
+        "texto-footer"
+        "redes";
+    }
+}
