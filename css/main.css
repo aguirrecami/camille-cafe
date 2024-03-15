@@ -1,18 +1,294 @@
-/* Error: expected ";".
- *    ,
- * 22 |                 img{
- *    |                    ^
- *    '
- *   scss\pages\_main-index.scss 22:20  @import
- *   scss\main.scss 10:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 22 \2502                  img{\d\a    \2502                     ^\a    \2575 \a   scss\\pages\\_main-index.scss 22:20  @import\a   scss\\main.scss 10:9                root stylesheet';
+.main-postres .contenedor .carta, .main-bebidas .contenedor .carta, .main-index section .contenedor-principal .carta {
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 10px 10px 6px -1px rgba(140, 107, 66, 0.75);
+  padding: 15px;
+  margin: 15px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2E6D8;
+}
+
+.titulo-principal {
+  color: #F2F2F0;
+  background-color: #8C6B42;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-align: center;
+}
+
+header .nav-bg {
+  background-image: url(./../img/cork-board.webp);
+  background-repeat: repeat;
+  width: 100%;
+}
+header .nav-bg div .menu-button:focus {
+  box-shadow: none;
+}
+header .nav-bg div .menu-button:focus .menu-icon {
+  background-image: url(./../img/menu-hamburguesa.svg);
+}
+header .nav-bg div .menu {
+  flex-grow: 0;
+}
+header .nav-bg div .menu .barra-ul {
+  list-style: none;
+  display: flex;
+  column-gap: 5px;
+}
+header .nav-bg div .menu .barra-ul li a {
+  color: #F2F2F0;
+  text-decoration-line: none;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #8C6B42;
+  border: 1px solid #F2F2F0;
+}
+header .nav-bg div .menu .barra-ul li a:hover {
+  background-color: transparent;
+}
+
+.main-index section .baner {
+  width: 100%;
+}
+.main-index section .contenedor-principal {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+}
+.main-index section .contenedor-principal .carta {
+  width: 300px;
+  height: 300px;
+}
+.main-index section .contenedor-principal .carta img {
+  width: 100%;
+  height: 200px;
+}
+.main-index section .contenedor-principal .carta .carta-texto {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+}
+.main-index section .contenedor-principal .carta .carta-texto .fuente {
+  font-size: medium;
+}
+
+.main-bebidas .contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+.main-bebidas .contenedor .carta {
+  width: 300px;
+  height: 300px;
+}
+.main-bebidas .contenedor .carta img {
+  width: 100%;
+  height: 200px;
+}
+.main-bebidas .contenedor .carta-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+.main-bebidas .contenedor .carta-texto .fuente {
+  font-size: medium;
+}
+
+.main-postres .contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+}
+.main-postres .contenedor .carta {
+  width: 300px;
+  height: 300px;
+}
+.main-postres .contenedor .carta img {
+  width: 100%;
+  height: 200px;
+}
+.main-postres .contenedor .carta .carta-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+.main-postres .contenedor .carta .carta-texto .fuente {
+  font-size: medium;
+}
+
+.main-nosotros .carta-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+}
+.main-nosotros .carta-nosotros .carta-nosotros-foto {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 6px -1px rgba(140, 107, 66, 0.75);
+}
+.main-nosotros .carta-nosotros div .carta-nosotros-texto {
+  margin-bottom: 35px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+
+.main-contacto .contenedor-datos {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.main-contacto .contenedor-datos .datos {
+  display: block;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #8C6B42;
+  border-radius: 25px;
+  box-shadow: 10px 10px 6px -1px rgba(140, 107, 66, 0.75);
+  margin: 30px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+.main-contacto .contenedor-datos .datos .datos-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+}
+.main-contacto .contenedor-datos .datos .datos-1 .imput-size {
+  width: 250px;
+  height: 20px;
+}
+.main-contacto .contenedor-datos .datos .datos-2 {
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .contenedor-datos .datos .datos-2 .textarea {
+  width: 450px;
+  height: 140px;
+}
+.main-contacto .contenedor-datos .datos .enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-top: 20px;
+  margin: 20px;
+}
+.footer .mapa {
+  overflow: hidden;
+  height: 250px;
+  width: 400px;
+}
+.footer .texto-footer {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+.footer .texto-footer ul li {
+  list-style: none;
+}
+.footer .redes .redes-texto {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #8C6B42;
+}
+
+@media screen and (max-width: 1024px) {
+  header .nav-bg div .menu .barra-ul {
+    align-items: center;
+    background-color: #8C6B42;
+    border: 1px solid #F2F2F0;
+  }
+  header .nav-bg div .menu .barra-ul li a {
+    border: none;
+    background-color: none;
+  }
+  .main-index section .contenedor-principal {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  .main-bebidas .contenedor, .main-postres .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "mapa texto-footer" "redes redes";
+  }
+  .mapa {
+    grid-area: mapa;
+  }
+  .texto-footer {
+    grid-area: texto-footer;
+  }
+  .redes {
+    grid-area: redes;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-index section .contenedor-principal {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .main-bebidas .contenedor, .main-postres .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "mapa" "texto-footer" "redes";
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
