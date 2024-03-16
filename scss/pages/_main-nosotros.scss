@@ -1,9 +1,6 @@
 // main nosotros
 .main-nosotros{
     .carta-nosotros{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         @include flex (column,center, normal);
         .carta-nosotros-foto{
             margin: 20px;

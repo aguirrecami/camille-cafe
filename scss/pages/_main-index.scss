@@ -14,11 +14,6 @@
                 width: nth($list: $medidas, $n: 3);
                 height: nth($list: $medidas, $n: 3);
                 @extend %estilos-card;
-                // border-radius: 25px;
-                // overflow: hidden;
-                // box-shadow: 10px 10px 6px -1px rgba(140,107,66,0.75);
-                // padding: 15px;
-                // margin: 15px;
                 img{
                     width: 100%;
                     height: nth($list: $medidas, $n: 2);
@@ -26,11 +21,7 @@
                 .carta-texto{
                     font-family: "Poppins", sans-serif;
                     font-size: medium;
-                    color: #8C6B42;
-                    // display: flex;
-                    // flex-direction: column;
-                    // align-items: center;
-                    // justify-content: center;
+                    color: $color-secundario;
                     @include flex (column, center, center);
                     text-align: center;
                     height: nth($list: $medidas, $n: 1);

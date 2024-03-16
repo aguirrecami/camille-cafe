@@ -33,7 +33,7 @@ header .nav-bg {
 header .nav-bg div .menu-button:focus {
   box-shadow: none;
 }
-header .nav-bg div .menu-button:focus .menu-icon {
+header .nav-bg div .menu-button .menu-icon {
   background-image: url(./../img/menu-hamburguesa.svg);
 }
 header .nav-bg div .menu {

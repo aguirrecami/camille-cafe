@@ -5,8 +5,10 @@ header {
         background-repeat: repeat;
         width: 100%;
         div {
-            .menu-button:focus {
+            .menu-button{
+                &:focus{
                 box-shadow: none;
+            }
                 .menu-icon {
                     background-image: url(./../img/menu-hamburguesa.svg);
                 }
