@@ -221,8 +221,8 @@ header .nav-bg div .menu .barra-ul li a:hover {
 }
 .footer .mapa {
   overflow: hidden;
+  width: 100%;
   height: 250px;
-  width: 400px;
 }
 .footer .texto-footer {
   font-family: "Poppins", sans-serif;
