@@ -159,6 +159,7 @@ header .nav-bg div .menu .barra-ul li a:hover {
   padding: 20px;
   border-radius: 25px;
   box-shadow: 10px 10px 6px -1px rgba(140, 107, 66, 0.75);
+  width: 100%;
 }
 .main-nosotros .carta-nosotros div .carta-nosotros-texto {
   margin-bottom: 35px;
