@@ -3,8 +3,8 @@
     .carta-nosotros{
         @include flex (column,center, center);
         .carta-nosotros-foto{
-            margin: 15px;
-            padding: 15px;
+            margin: 20px;
+            padding: 20px;
             border-radius: 25px;
             box-shadow: 10px 10px 6px -1px rgba(140,107,66,0.75);
         }
